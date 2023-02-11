@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './App.css';
 import Button from './components/UI/Button/Button';
 import DemoOutput from './components/Demo/DemoOutput';
@@ -8,9 +8,9 @@ const App = () => {
 
   console.log('App running!');
 
-  const toggleVisible = () => {
+  const toggleVisible = useCallback(() => {
     setParagraphIsVisible((prevState) => !prevState);
-  };
+  }, []);
 
   return (
     <div className="app">
