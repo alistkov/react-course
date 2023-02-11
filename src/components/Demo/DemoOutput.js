@@ -6,4 +6,4 @@ const DemoOutput = ({ show }) => {
   return <Paragraph>{show ? 'This is new!' : ''}</Paragraph>;
 };
 
-export default DemoOutput;
+export default React.memo(DemoOutput);
