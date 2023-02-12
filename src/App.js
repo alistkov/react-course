@@ -1,5 +1,11 @@
-const App = () => {
-  return <h1>React - the complete guide</h1>;
-};
+import Users from './components/Users';
+
+function App() {
+  return (
+    <div>
+      <Users />
+    </div>
+  );
+}
 
 export default App;
